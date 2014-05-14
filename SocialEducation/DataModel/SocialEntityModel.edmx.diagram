@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="f827e0f924ee466fb84881fd0328ddac" Name="Diagram1">
+        <EntityTypeShape EntityType="UzaktanEgitimModel.Comment" Width="1.5" PointX="3.75" PointY="15.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="UzaktanEgitimModel.CommentControl" Width="1.5" PointX="1.5" PointY="15.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="UzaktanEgitimModel.Document" Width="1.5" PointX="0.75" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="UzaktanEgitimModel.Feed" Width="1.5" PointX="3" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UzaktanEgitimModel.Lesson" Width="1.5" PointX="1.5" PointY="24" IsExpanded="true" />
+        <EntityTypeShape EntityType="UzaktanEgitimModel.Like" Width="1.5" PointX="6" PointY="10.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="UzaktanEgitimModel.LikeControl" Width="1.5" PointX="1.5" PointY="29.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="UzaktanEgitimModel.Message" Width="1.5" PointX="3" PointY="19.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="UzaktanEgitimModel.Role" Width="1.5" PointX="3.75" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="UzaktanEgitimModel.RoleScreenMap" Width="1.5" PointX="6" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="UzaktanEgitimModel.RoleUser" Width="1.5" PointX="6" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="UzaktanEgitimModel.Screen" Width="1.5" PointX="3.75" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="UzaktanEgitimModel.sysdiagram" Width="1.5" PointX="8.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UzaktanEgitimModel.User" Width="1.5" PointX="0.75" PointY="9.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="UzaktanEgitimModel.UserLessonMap" Width="1.5" PointX="6" PointY="14.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="UzaktanEgitimModel.Video" Width="1.5" PointX="8.25" PointY="10" IsExpanded="true" />
+        <AssociationConnector Association="UzaktanEgitimModel.FK_Comment_CommentControl" ManuallyRouted="false" />
+        <AssociationConnector Association="UzaktanEgitimModel.FK_Document_CommentControl" ManuallyRouted="false" />
+        <AssociationConnector Association="UzaktanEgitimModel.FK_Lesson_CommentControl" ManuallyRouted="false" />
+        <AssociationConnector Association="UzaktanEgitimModel.FK_Video_CommentControl" ManuallyRouted="false" />
+        <AssociationConnector Association="UzaktanEgitimModel.FK_Document_Lesson" ManuallyRouted="false" />
+        <AssociationConnector Association="UzaktanEgitimModel.FK_Document_LikeControl" ManuallyRouted="false" />
+        <AssociationConnector Association="UzaktanEgitimModel.FK_Feed_Document" ManuallyRouted="false" />
+        <AssociationConnector Association="UzaktanEgitimModel.FK_Feed_Lesson" ManuallyRouted="false" />
+        <AssociationConnector Association="UzaktanEgitimModel.FK_Feed_Lesson1" ManuallyRouted="false" />
+        <AssociationConnector Association="UzaktanEgitimModel.FK_Feed_User" ManuallyRouted="false" />
+        <AssociationConnector Association="UzaktanEgitimModel.FK_Feed_User1" ManuallyRouted="false" />
+        <AssociationConnector Association="UzaktanEgitimModel.FK_Feed_Video" ManuallyRouted="false" />
+        <AssociationConnector Association="UzaktanEgitimModel.FK_Lesson_LikeControl" ManuallyRouted="false" />
+        <AssociationConnector Association="UzaktanEgitimModel.FK_UserLessonMap_Lesson" ManuallyRouted="false" />
+        <AssociationConnector Association="UzaktanEgitimModel.FK_Video_Lesson" ManuallyRouted="false" />
+        <AssociationConnector Association="UzaktanEgitimModel.FK_Like_LikeControl" ManuallyRouted="false" />
+        <AssociationConnector Association="UzaktanEgitimModel.FK_Like_User" ManuallyRouted="false" />
+        <AssociationConnector Association="UzaktanEgitimModel.FK_Video_Like" ManuallyRouted="false" />
+        <AssociationConnector Association="UzaktanEgitimModel.FK_Message_User" ManuallyRouted="false" />
+        <AssociationConnector Association="UzaktanEgitimModel.FK_Message_User1" ManuallyRouted="false" />
+        <AssociationConnector Association="UzaktanEgitimModel.FK_RoleScreenMap_Role" ManuallyRouted="false" />
+        <AssociationConnector Association="UzaktanEgitimModel.FK_RoleUser_Role" ManuallyRouted="false" />
+        <AssociationConnector Association="UzaktanEgitimModel.FK_RoleScreenMap_Screen" ManuallyRouted="false" />
+        <AssociationConnector Association="UzaktanEgitimModel.FK_RoleUser_User" ManuallyRouted="false" />
+        <AssociationConnector Association="UzaktanEgitimModel.FK_UserLessonMap_User" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
