@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="f827e0f924ee466fb84881fd0328ddac" Name="Diagram1">
+      <Diagram DiagramId="61deabae9dba42e8af85d7b2e115939e" Name="Diagram1">
         <EntityTypeShape EntityType="UzaktanEgitimModel.Comment" Width="1.5" PointX="3.75" PointY="15.625" IsExpanded="true" />
         <EntityTypeShape EntityType="UzaktanEgitimModel.CommentControl" Width="1.5" PointX="1.5" PointY="15.5" IsExpanded="true" />
         <EntityTypeShape EntityType="UzaktanEgitimModel.Document" Width="1.5" PointX="0.75" PointY="2" IsExpanded="true" />

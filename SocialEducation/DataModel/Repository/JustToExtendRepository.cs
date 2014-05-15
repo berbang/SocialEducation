@@ -175,8 +175,9 @@ namespace SocialEducation.DataModel
             //Set Base Fields
             DateTime now = DateTime.Now;
             entity.GetType().GetProperty("UpdateDate").SetValue(entity, now, null);
+            entity.GetType().GetProperty("CreateDate").SetValue(entity, now, null);
            // entity.GetType().GetProperty("UpdateUsername").SetValue(entity, username, null);
-            int objectId = (int)entity.GetType().GetProperty("id").GetValue(entity, null);
+            int objectId = (int)entity.GetType().GetProperty("Id").GetValue(entity, null);
 
             //Clean connected Objects
             foreach (var MethodInfo in entity.GetType().GetMethods())

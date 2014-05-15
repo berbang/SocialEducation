@@ -63,104 +63,168 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <EntityDeploy Include="DataModel\SocialEntityModel.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>SocialEntityModel.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="DataModel\SocialEntityModel.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>SocialEntityModel.edmx</DependentUpon>
-      <LastGenOutput>SocialEntityModel.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="DataModel\SocialEntityModel.edmx.diagram">
-      <DependentUpon>SocialEntityModel.edmx</DependentUpon>
-    </Content>
-    <Content Include="DataModel\SocialEntityModel.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>SocialEntityModel.edmx</DependentUpon>
-      <LastGenOutput>SocialEntityModel.cs</LastGenOutput>
-    </Content>
     <Content Include="packages.config" />
+    <EntityDeploy Include="DataModel\UzaktanEgitimEntityModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>UzaktanEgitimEntityModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="DataModel\UzaktanEgitimEntityModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>UzaktanEgitimEntityModel.edmx</DependentUpon>
+      <LastGenOutput>UzaktanEgitimEntityModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="DataModel\UzaktanEgitimEntityModel.edmx.diagram">
+      <DependentUpon>UzaktanEgitimEntityModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="DataModel\UzaktanEgitimEntityModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>UzaktanEgitimEntityModel.edmx</DependentUpon>
+      <LastGenOutput>UzaktanEgitimEntityModel.cs</LastGenOutput>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+    <Content Include="web\fonts\Amble-Regular-webfont.ttf" />
+    <Content Include="web\images\icons.psd" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="index.html" />
     <Content Include="Web.config" />
+    <Content Include="web\css\clndr.css" />
+    <Content Include="web\css\nav.css" />
+    <Content Include="web\css\style.css" />
+    <Content Include="web\images\arrow-left.png" />
+    <Content Include="web\images\arrow-right.png" />
+    <Content Include="web\images\chart.png" />
+    <Content Include="web\images\clouds.png" />
+    <Content Include="web\images\comments.png" />
+    <Content Include="web\images\download.png" />
+    <Content Include="web\images\events-hover.png" />
+    <Content Include="web\images\events.png" />
+    <Content Include="web\images\facebook.png" />
+    <Content Include="web\images\facebook_icon.png" />
+    <Content Include="web\images\favourite.png" />
+    <Content Include="web\images\follow_user.png" />
+    <Content Include="web\images\google+.png" />
+    <Content Include="web\images\graph.png" />
+    <Content Include="web\images\invites-hover.png" />
+    <Content Include="web\images\invites.png" />
+    <Content Include="web\images\likes.png" />
+    <Content Include="web\images\location.png" />
+    <Content Include="web\images\lock.png" />
+    <Content Include="web\images\loginArrow.png" />
+    <Content Include="web\images\mail-hover.png" />
+    <Content Include="web\images\mail.png" />
+    <Content Include="web\images\nav.png" />
+    <Content Include="web\images\profile_img150x150.jpg" />
+    <Content Include="web\images\profile_img40x40.jpg" />
+    <Content Include="web\images\settings-hover.png" />
+    <Content Include="web\images\settings.png" />
+    <Content Include="web\images\statistics-hover.png" />
+    <Content Include="web\images\statistics.png" />
+    <Content Include="web\images\sun.png" />
+    <Content Include="web\images\sun_icon1.png" />
+    <Content Include="web\images\sun_icon2.png" />
+    <Content Include="web\images\tweets.png" />
+    <Content Include="web\images\upload.png" />
+    <Content Include="web\images\user.png" />
+    <Content Include="web\images\views.png" />
+    <Content Include="web\index.html" />
+    <Content Include="web\js\Chart.js" />
+    <Content Include="web\js\clndr.js" />
+    <Content Include="web\js\jquery.easing.js" />
+    <Content Include="web\js\jquery.js" />
+    <Content Include="web\js\jquery.ulslide.js" />
+    <Content Include="web\js\json2.js" />
+    <Content Include="web\js\login.js" />
+    <Content Include="web\js\moment-2.2.1.js" />
+    <Content Include="web\js\responsive-nav.js" />
+    <Content Include="web\js\site.js" />
+    <Content Include="web\js\underscore-min.js" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Business\UserService.cs" />
     <Compile Include="DataModel\Comment.cs">
-      <DependentUpon>SocialEntityModel.tt</DependentUpon>
+      <DependentUpon>UzaktanEgitimEntityModel.tt</DependentUpon>
     </Compile>
     <Compile Include="DataModel\CommentControl.cs">
-      <DependentUpon>SocialEntityModel.tt</DependentUpon>
+      <DependentUpon>UzaktanEgitimEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Document.cs">
+      <DependentUpon>UzaktanEgitimEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Feed.cs">
+      <DependentUpon>UzaktanEgitimEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Lesson.cs">
+      <DependentUpon>UzaktanEgitimEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Like.cs">
+      <DependentUpon>UzaktanEgitimEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\LikeControl.cs">
+      <DependentUpon>UzaktanEgitimEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Message.cs">
+      <DependentUpon>UzaktanEgitimEntityModel.tt</DependentUpon>
     </Compile>
     <Compile Include="DataModel\Repository\CommentRepository.cs" />
     <Compile Include="DataModel\Repository\ContextFactory.cs" />
     <Compile Include="DataModel\Repository\ContextHttpModule.cs" />
-    <Compile Include="DataModel\Document.cs">
-      <DependentUpon>SocialEntityModel.tt</DependentUpon>
-    </Compile>
     <Compile Include="DataModel\ExtendEntities\Serializables.cs" />
-    <Compile Include="DataModel\Feed.cs">
-      <DependentUpon>SocialEntityModel.tt</DependentUpon>
-    </Compile>
     <Compile Include="DataModel\Repository\JustToExtendRepository.cs" />
-    <Compile Include="DataModel\Lesson.cs">
-      <DependentUpon>SocialEntityModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DataModel\Like.cs">
-      <DependentUpon>SocialEntityModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DataModel\LikeControl.cs">
-      <DependentUpon>SocialEntityModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DataModel\Message.cs">
-      <DependentUpon>SocialEntityModel.tt</DependentUpon>
-    </Compile>
     <Compile Include="DataModel\Repository\SocialEntities.cs" />
+    <Compile Include="DataModel\Repository\UserRepository.cs" />
     <Compile Include="DataModel\Role.cs">
-      <DependentUpon>SocialEntityModel.tt</DependentUpon>
+      <DependentUpon>UzaktanEgitimEntityModel.tt</DependentUpon>
     </Compile>
     <Compile Include="DataModel\RoleScreenMap.cs">
-      <DependentUpon>SocialEntityModel.tt</DependentUpon>
+      <DependentUpon>UzaktanEgitimEntityModel.tt</DependentUpon>
     </Compile>
     <Compile Include="DataModel\RoleUser.cs">
-      <DependentUpon>SocialEntityModel.tt</DependentUpon>
+      <DependentUpon>UzaktanEgitimEntityModel.tt</DependentUpon>
     </Compile>
     <Compile Include="DataModel\Screen.cs">
-      <DependentUpon>SocialEntityModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DataModel\SocialEntityModel.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>SocialEntityModel.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DataModel\SocialEntityModel.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>SocialEntityModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DataModel\SocialEntityModel.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>SocialEntityModel.edmx</DependentUpon>
+      <DependentUpon>UzaktanEgitimEntityModel.tt</DependentUpon>
     </Compile>
     <Compile Include="DataModel\sysdiagram.cs">
-      <DependentUpon>SocialEntityModel.tt</DependentUpon>
+      <DependentUpon>UzaktanEgitimEntityModel.tt</DependentUpon>
     </Compile>
     <Compile Include="DataModel\User.cs">
-      <DependentUpon>SocialEntityModel.tt</DependentUpon>
+      <DependentUpon>UzaktanEgitimEntityModel.tt</DependentUpon>
     </Compile>
     <Compile Include="DataModel\UserLessonMap.cs">
-      <DependentUpon>SocialEntityModel.tt</DependentUpon>
+      <DependentUpon>UzaktanEgitimEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\UzaktanEgitimEntityModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UzaktanEgitimEntityModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\UzaktanEgitimEntityModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UzaktanEgitimEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\UzaktanEgitimEntityModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UzaktanEgitimEntityModel.edmx</DependentUpon>
     </Compile>
     <Compile Include="DataModel\Video.cs">
-      <DependentUpon>SocialEntityModel.tt</DependentUpon>
+      <DependentUpon>UzaktanEgitimEntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
